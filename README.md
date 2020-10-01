@@ -1,4 +1,4 @@
-# Literature_Review_Tools
+# Literature Review Tools
 This repository contains a series of Jupyter notebooks using Python modules Arcas and Scholarly to assist in the early stages of academic literature review.
 
 ## Technical documentation
