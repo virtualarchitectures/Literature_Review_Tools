@@ -44,11 +44,11 @@ Scholarly documentation: https://scholarly.readthedocs.io/en/stable/
 
 Jupyter Notebooks can either be installed directly, or with the [Anaconda](https://www.anaconda.com/) distribution of Python. 
 
-### Running the application
+### Running the notebooks
 
-1. Clone this repository with a GitHub client or click the 'Code' button at thew top of this page to download the zip file. Ensure you extract the zipped files.
-2. Launch the Jupyter Notebook application on your computer.
-3. Navigate to the location of the downloaded files within the Jupyter interface.
+1. Clone this repository with a GitHub client or click the 'Code' button at thew top of this page to download the zip file. Ensure you extract the zipped files and note the file location.
+2. Launch the Jupyter notebook application on your computer.
+3. Navigate to the location of the downloaded files using the Jupyter interface.
 4. Double click on the desired notebook. Either `Arcas_Literature_Review.ipynb` or `Scholarly_Literature_Review.ipynb`.
 
 ## Licence
