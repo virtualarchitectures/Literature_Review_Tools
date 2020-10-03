@@ -36,7 +36,11 @@ To use this notebook you need to install the Scholarly module from the command l
 Scholarly github repository: https://github.com/scholarly-python-package/scholarly
 Scholarly documentation: https://scholarly.readthedocs.io/en/stable/
 
-**Warning:** Google Scholar can block your IP address when using Scholarly. To avoiding network issues it is highly advised to use a proxy server. Refer to the Scholarly GitHub page and documentation for further information.
+**Warning:** Google Scholar can block your IP address when using Scholarly. These temporary bans can last for between 1 and 48 hours. To avoiding issues of this kind it is advised that you use a proxy server. Refer to the Scholarly GitHub page and documentation for further information.
+
+Be aware that the more people that use a specific proxy server to access Google Scholar, the more likely it will be for that server to be blocked when you try to use it. The `FreeProxies()` method has been tested but actually performed less well than using a VPN without a proxy. Similarly TOR exit points can also be flooded by too many users and blocked by Google.
+
+**Error Handling:** If you receive the message `Exception: Cannot fetch the page from Google Scholar` this means that you have been temporarily blocked by Google Scholar. This usually occurs because Google responded to the HTTP request from Scholarly with a CAPTCHA. These aren't currently handled by the library. Current workarounds involve the integration with Selenium which gives users the ability to solve the CAPTCHA: https://github.com/scholarly-python-package/scholarly/issues/131
 
 ### Dependencies
 
