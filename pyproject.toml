@@ -1,0 +1,16 @@
+[project]
+name = "literature-review-tools"
+version = "0.1.0"
+description = "A series of Jupyter notebooks to assist in the early stages of literature review."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "arcas>=1.0.0",
+    "flatten-json>=0.1.14",
+    "ipykernel>=6.29.5",
+    "pandas>=2.2.3",
+    "pytrends>=4.9.2",
+    "rich>=13.9.4",
+    "scholarly>=1.7.11",
+    "wordcloud>=1.9.4",
+]
