@@ -9,6 +9,7 @@ dependencies = [
     "flatten-json>=0.1.14",
     "ipykernel>=6.29.5",
     "pandas>=2.2.3",
+    "pyalex>=0.18",
     "pytrends>=4.9.2",
     "rich>=13.9.4",
     "scholarly>=1.7.11",

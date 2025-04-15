@@ -1,4 +1,5 @@
 version = 1
+revision = 1
 requires-python = ">=3.12"
 
 [[package]]
@@ -483,7 +484,7 @@ name = "ipykernel"
 version = "6.29.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "appnope", marker = "platform_system == 'Darwin'" },
+    { name = "appnope", marker = "sys_platform == 'darwin'" },
     { name = "comm" },
     { name = "debugpy" },
     { name = "ipython" },
@@ -636,6 +637,7 @@ dependencies = [
     { name = "flatten-json" },
     { name = "ipykernel" },
     { name = "pandas" },
+    { name = "pyalex" },
     { name = "pytrends" },
     { name = "rich" },
     { name = "scholarly" },
@@ -648,6 +650,7 @@ requires-dist = [
     { name = "flatten-json", specifier = ">=0.1.14" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "pandas", specifier = ">=2.2.3" },
+    { name = "pyalex", specifier = ">=0.18" },
     { name = "pytrends", specifier = ">=4.9.2" },
     { name = "rich", specifier = ">=13.9.4" },
     { name = "scholarly", specifier = ">=1.7.11" },
@@ -1026,6 +1029,19 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/cd/05/0a34433a064256a578f1783a10da6df098ceaa4a57bbeaa96a6c0352786b/pure_eval-0.2.3.tar.gz", hash = "sha256:5f4e983f40564c576c7c8635ae88db5956bb2229d7e9237d03b3c0b0190eaf42", size = 19752 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/8e/37/efad0257dc6e593a18957422533ff0f87ede7c9c6ea010a2177d738fb82f/pure_eval-0.2.3-py3-none-any.whl", hash = "sha256:1db8e35b67b3d218d818ae653e27f06c3aa420901fa7b081ca98cbedc874e0d0", size = 11842 },
+]
+
+[[package]]
+name = "pyalex"
+version = "0.18"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "requests" },
+    { name = "urllib3" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3f/9f/3a67cbe13359441817ca6bee9c0681a11cd0331afef0818349a0690d47e0/pyalex-0.18.tar.gz", hash = "sha256:b71df6e0e104101783a64ecb2b41b24c75059ee4563aa5966499454168bee5e7", size = 46939 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/87/3f/b93b7976a43fbeacdb684fe333bb82d926b636f663e75afbbceec8ddc539/pyalex-0.18-py3-none-any.whl", hash = "sha256:16cb0e0b89f7b20370e8a8a217c372d11f9bc2e539f366709aa3a47d97055d4c", size = 13258 },
 ]
 
 [[package]]
